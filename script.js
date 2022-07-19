@@ -7,7 +7,7 @@ $(document).ready(function() {
     
     $('.btn').on('click', function(evt) {
       var buttonPressed = $(this).html();
-      console.log(buttonPressed);
+      
       
       if (buttonPressed === "AC") {
             result = 0;
@@ -53,7 +53,6 @@ $(document).ready(function() {
     if(a === null || b === null || operation === null) return '0';
     a = parseFloat(a);
     b = parseFloat(b);
-    console.log(a, b, operation);
     if (operation === '+') return a + b;
     if (operation === '-') return a - b;
     if (operation === 'X') return a * b;
